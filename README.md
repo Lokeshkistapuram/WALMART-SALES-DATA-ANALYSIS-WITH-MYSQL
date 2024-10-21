@@ -146,14 +146,12 @@ $ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenu
 
 For the rest of the code, check the [SQL SCRIPT -WALMART SALES BY KL] (https://github.com/Lokeshkistapuram/WALMART-SALES-DATA-ANALYSIS-WITH-MYSQL/blob/main/SOL%20SCRIPT%20-WALMART%20SALES%20BY%20KL.sql) file
 -- SQL CODE:
+-- Create database
+CREATE DATABASE IF NOT EXISTS Walmartssalesdata;
 
--- 	CREATING DATABASE:
 
-    CREATE DATABASE IF NOT EXISTS salesdatawalmart;
-    
--- CREATING TABLE:
-
-   CREATE TABLE IF NOT EXISTS sales(
+-- Create table
+CREATE TABLE IF NOT EXISTS sales(
 	invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
     branch VARCHAR(5) NOT NULL,
     city VARCHAR(30) NOT NULL,
@@ -171,6 +169,5 @@ For the rest of the code, check the [SQL SCRIPT -WALMART SALES BY KL] (https://g
     gross_margin_pct FLOAT(11,9),
     gross_income DECIMAL(12, 4),
     rating FLOAT(2, 1)
-);
- 
+); 
 ```
