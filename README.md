@@ -140,15 +140,15 @@ $ \text{VAT} = 5\% * COGS\\= 5\%  320.53 = 16.0265 $
 
 $ total = VAT + COGS\\= 16.0265 + 320.53 = $336.5565$
 
-$ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenue}}\\=\frac{16.0265}{336.5565} = 0.047619\\\approx 4.7619\% $
+$ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenue}}\\=\frac{16.0265}{336.5565} = 0.047619\\\approx 4.7619\% 
 
 ## Code
 
 For the rest of the code, check the [SQL SCRIPT -WALMART SALES BY KL] (https://github.com/Lokeshkistapuram/WALMART-SALES-DATA-ANALYSIS-WITH-MYSQL/blob/main/SOL%20SCRIPT%20-WALMART%20SALES%20BY%20KL.sql) file
--- SQL CODE:
--- Create database
-CREATE DATABASE IF NOT EXISTS Walmartssalesdata;
 
+```sql
+-- Create database
+CREATE DATABASE IF NOT EXISTS walmartsalesdata;
 
 -- Create table
 CREATE TABLE IF NOT EXISTS sales(
@@ -169,5 +169,5 @@ CREATE TABLE IF NOT EXISTS sales(
     gross_margin_pct FLOAT(11,9),
     gross_income DECIMAL(12, 4),
     rating FLOAT(2, 1)
-); 
+);
 ```
